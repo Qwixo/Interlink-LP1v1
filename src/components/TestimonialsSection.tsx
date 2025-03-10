@@ -32,11 +32,11 @@ const TestimonialsSection = () => {
   return (
     <div className="bg-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-center text-[#064088] pt-12">
+        <h2 className="text-4xl md:text-5xl font-bold text-center text-[#064088] pt-12 mb-6">
           What Our Students Say
         </h2>
         
-        <AnimatedTestimonials testimonials={testimonials} />
+        <AnimatedTestimonials testimonials={testimonials} className="pt-0 mt-0" />
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import './App.css';
 import HeroSection from './components/HeroSection';
 import TestimonialsSection from './components/TestimonialsSection';
 import GuideTeachesSection from './components/GuideTeachesSection';
+import IsRightForYouSection from './components/IsRightForYouSection';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <HeroSection />
       <GuideTeachesSection />
       <TestimonialsSection />
+      <IsRightForYouSection />
     </div>
   );
 }
