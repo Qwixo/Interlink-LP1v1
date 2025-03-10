@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { GraduationCap, ArrowRight } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { AuroraBackground } from './ui/aurora-background'
 import { motion } from 'framer-motion'
 
@@ -35,8 +35,11 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="mb-8 flex items-center"
         >
-          <GraduationCap size={36} className="text-[#064088]" />
-          <span className="ml-2 text-xl font-semibold text-[#064088]">Interlink</span>
+          <img 
+            src="https://i.imgur.com/P0IOLMW.png" 
+            alt="Interlink Logo" 
+            className="h-12 md:h-16"
+          />
         </motion.div>
         
         {/* Hero Content */}
