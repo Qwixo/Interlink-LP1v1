@@ -11,9 +11,13 @@ function App() {
   return (
     <div className="min-h-screen">
       <HeroSection />
+      <div className="py-4"></div>
       <GuideTeachesSection />
+      <div className="py-2"></div>
       <TestimonialsSection />
+      <div className="py-2"></div>
       <IsRightForYouSection />
+      <div className="py-2"></div>
       <FinalCTASection />
       <Footer />
     </div>

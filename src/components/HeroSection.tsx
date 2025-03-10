@@ -75,12 +75,12 @@ const HeroSection = () => {
           </motion.p>
         </div>
           
-        {/* Opt-in Form - Simplified and cleaner */}
+        {/* Opt-in Form - Wider on desktop */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.5 }}
-          className="w-full max-w-3xl mx-auto bg-white/90 p-6 md:p-8 rounded-2xl shadow-lg"
+          className="w-full max-w-4xl mx-auto bg-white/90 p-6 md:p-8 rounded-2xl shadow-lg"
         >
           <form onSubmit={handleSubmit} className="flex flex-col md:flex-row items-end gap-4">
             <div className="flex-1 w-full">
@@ -92,7 +92,7 @@ const HeroSection = () => {
                 onChange={handleChange}
                 placeholder="Your full name"
                 required
-                className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#064088] bg-white"
+                className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#064088] bg-white text-gray-800"
               />
             </div>
             
@@ -105,7 +105,7 @@ const HeroSection = () => {
                 onChange={handleChange}
                 placeholder="Your email address"
                 required
-                className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#064088] bg-white"
+                className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#064088] bg-white text-gray-800"
               />
             </div>
             

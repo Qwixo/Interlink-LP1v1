@@ -1,9 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { ArrowRight } from 'lucide-react';
 
 const FinalCTASection = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -19,7 +20,9 @@ const FinalCTASection = () => {
             transition={{ duration: 0.6 }}
             className="text-3xl md:text-4xl font-bold text-[#064088] mb-4"
           >
-            Still Thinking? Get Your Free Guide Now!
+            Still Thinking? Get Your Guide Now!
+            <br />
+            <span className="text-[#dc5d33]">It's FREE!</span>
           </motion.h2>
           
           <motion.p
@@ -44,7 +47,7 @@ const FinalCTASection = () => {
                 <input
                   type="text"
                   placeholder="Enter your full name"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#064088] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#064088] focus:border-transparent text-gray-800"
                   required
                 />
               </div>
@@ -53,7 +56,7 @@ const FinalCTASection = () => {
                 <input
                   type="email"
                   placeholder="your.email@example.com"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#064088] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#064088] focus:border-transparent text-gray-800"
                   required
                 />
               </div>
@@ -61,10 +64,11 @@ const FinalCTASection = () => {
               <motion.button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                className="w-full bg-[#dc5d33] text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-[#c24e2b] transition-all duration-300"
+                className="w-full bg-[#dc5d33] text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-[#c24e2b] transition-all duration-300 flex items-center justify-center gap-2"
                 type="submit"
               >
-                Get Instant Access
+                <span>Get Instant Access</span>
+                <ArrowRight size={16} />
               </motion.button>
             </form>
             

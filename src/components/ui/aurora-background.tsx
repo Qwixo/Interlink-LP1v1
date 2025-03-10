@@ -24,14 +24,6 @@ export const AuroraBackground = ({
         <div
           className={cn(
             `
-          --white: white;
-          --black: black;
-          --transparent: transparent;
-          --blue-300: #93c5fd;
-          --blue-400: #60a5fa;
-          --blue-500: #3b82f6;
-          --indigo-300: #a5b4fc;
-          --violet-200: #ddd6fe;
           [--white-gradient:repeating-linear-gradient(100deg,var(--white)_0%,var(--white)_7%,var(--transparent)_10%,var(--transparent)_12%,var(--white)_16%)]
           [--dark-gradient:repeating-linear-gradient(100deg,var(--black)_0%,var(--black)_7%,var(--transparent)_10%,var(--transparent)_12%,var(--black)_16%)]
           [--aurora:repeating-linear-gradient(100deg,var(--blue-500)_10%,var(--indigo-300)_15%,var(--blue-300)_20%,var(--violet-200)_25%,var(--blue-400)_30%)]
@@ -45,7 +37,7 @@ export const AuroraBackground = ({
           after:[background-size:200%,_100%] 
           after:animate-aurora after:[background-attachment:fixed] after:mix-blend-difference
           pointer-events-none
-          absolute -inset-[10px] opacity-40 will-change-transform`,
+          absolute -inset-[10px] opacity-30 will-change-transform`,
 
             showRadialGradient &&
               `[mask-image:radial-gradient(ellipse_at_100%_0%,black_10%,var(--transparent)_70%)]`
@@ -55,4 +47,4 @@ export const AuroraBackground = ({
       <div className="relative z-10">{children}</div>
     </div>
   );
-};
+}
