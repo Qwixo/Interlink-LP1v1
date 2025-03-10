@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Map, FileText, DollarSign, Rocket, HelpCircle, ArrowRight } from 'lucide-react';
+import { Map, FileText, DollarSign, Rocket, HelpCircle } from 'lucide-react';
 
 const IsRightForYouSection = () => {
   const cards = [
@@ -50,30 +50,8 @@ const IsRightForYouSection = () => {
           ))}
         </div>
         
-        {/* The 5th card spans full width with arrows */}
+        {/* The 5th card spans full width */}
         <div className="mt-6 relative">
-          {/* Left Arrow */}
-          <motion.div 
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="hidden md:block absolute -left-12 top-1/2 transform -translate-y-1/2"
-          >
-            <ArrowRight className="w-12 h-12 text-red-500 transform rotate-180" />
-          </motion.div>
-          
-          {/* Right Arrow */}
-          <motion.div 
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="hidden md:block absolute -right-12 top-1/2 transform -translate-y-1/2"
-          >
-            <ArrowRight className="w-12 h-12 text-red-500" />
-          </motion.div>
-          
           <CardItem card={cards[4]} index={4} fullWidth highlightText />
         </div>
       </div>
@@ -112,7 +90,7 @@ const CardItem = ({ card, index, fullWidth = false, highlightText = false }: Car
       </h3>
       {highlightText ? (
         <p className="text-gray-700">
-          This could be the <span className="font-bold text-red-500 bg-yellow-100 px-1 py-0.5 rounded">best decision of your life</span>. Let's make it real!
+          This could be the <span className="font-bold bg-yellow-100 px-1 py-0.5 rounded">best decision of your life</span>. Let's make it real!
         </p>
       ) : (
         <p className="text-gray-700">
